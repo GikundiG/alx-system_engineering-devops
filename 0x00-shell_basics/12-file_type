@@ -1,8 +1,2 @@
 #!/bin/bash
-# Print the type of the file
-if [ -e "/tmp/iamafile" ]; then
-   file_type=$(file "/tmp/iamfile")
-   echo "The file /tmp/iamafile is of type: $file_type"
-else
-   echo "The file /tmp/iamafile does not exist."
-fi
+file /tmp/iamafile
