@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -name "*.gif" | while read file; do filename="${file%.*}"; filename="${filename##*/}"; echo "$filename"; done | sort -f | awk '{print $0}'; echo
