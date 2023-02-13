@@ -1,3 +1,2 @@
 #!/bin/bash
-if [ $# -ne 1 ] || [ ! -f $1 ]; then echo "Usage: $0 <filename>"; exit 1; fi; acrostic=$(cat $1 | awk '{ print substr($0,1,1) }'); echo $acrostic
-
+cut -c 1 | paste -s -d '
